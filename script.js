@@ -69,68 +69,86 @@
 // let logo = new centre();
 
 //Blue print
-class car {
-  constructor(brand, condition, model, carType) {
+// class car {
+//   constructor(brand, condition, model, carType) {
+//     this.brand = brand;
+//     this.condition = condition;
+//     this.model = model;
+//     this.carType = carType;
+//   }
+// }
+
+// // objects (first add obj then set properties)
+// let corolla = new car("corolla", "New", "2024", "Auto");
+// let suzuki = new car("suzuki", "Used", "2020", "Manual");
+
+// // constructor 2nd
+
+// class laptop {
+//   constructor(cpu, ram, model, condition, storage) {
+//     this.cpu = cpu;
+//     this.ram = ram;
+//     this.model = model;
+//     this.condition = condition;
+//     this.storage = storage;
+//   }
+//   showDetails() {
+//     console.log(
+//       `Cpu: ${this.cpu} Ram: ${this.ram} Model: ${this.model} Condition: ${this.condition} Storage: ${this.storage}`
+//     );
+//   }
+// }
+
+// let dell = new laptop("i5", "16gb", "2024", "new", "512gb ssd");
+
+// let hp = new laptop("i7", "8gb", "2020", "old", "1tb ssd");
+
+// // inheritance
+
+// class mobile {
+//   constructor(model, condition, os) {
+//     this.model = model;
+//     this.condition = condition;
+//     this.operatingSystem = os;
+//   }
+//   showDetails() {
+//     console.log(
+//       `Model: ${this.model} Condition: ${this.condition} Operating System : ${this.operatingSystem}`
+//     );
+//   }
+// }
+
+// // android
+
+// class Android extends mobile {
+//   constructor(model, condition, os, security) {
+//     super(model, condition, os);
+//     this.security = security;
+//   }
+
+//   showOs() {
+//     console.log(
+//       `Model: ${this.model} Condition: ${this.condition} Operating System : ${this.operatingSystem}`
+//     );
+//   }
+// }
+
+// let zeroX = new Android("Infnix", "New", "Android", "A++");
+
+// class pracitce
+
+class cars {
+  constructor(brand, model, condition) {
     this.brand = brand;
-    this.condition = condition;
-    this.model = model;
-    this.carType = carType;
-  }
-}
-
-// objects (first add obj then set properties)
-let corolla = new car("corolla", "New", "2024", "Auto");
-let suzuki = new car("suzuki", "Used", "2020", "Manual");
-
-// constructor 2nd
-
-class laptop {
-  constructor(cpu, ram, model, condition, storage) {
-    this.cpu = cpu;
-    this.ram = ram;
     this.model = model;
     this.condition = condition;
-    this.storage = storage;
   }
   showDetails() {
     console.log(
-      `Cpu: ${this.cpu} Ram: ${this.ram} Model: ${this.model} Condition: ${this.condition} Storage: ${this.storage}`
+      `The car is ${this.brand} of brand a ${this.model} and with ${this.condition} condition`
     );
   }
 }
 
-let dell = new laptop("i5", "16gb", "2024", "new", "512gb ssd");
-
-let hp = new laptop("i7", "8gb", "2020", "old", "1tb ssd");
-
-// inheritance
-
-class mobile {
-  constructor(model, condition, os) {
-    this.model = model;
-    this.condition = condition;
-    this.operatingSystem = os;
-  }
-  showDetails() {
-    console.log(
-      `Model: ${this.model} Condition: ${this.condition} Operating System : ${this.operatingSystem}`
-    );
-  }
-}
-
-// android
-
-class Android extends mobile {
-  constructor(model, condition, os, security) {
-    super(model, condition, os);
-    this.security = security;
-  }
-
-  showOs() {
-    console.log(
-      `Model: ${this.model} Condition: ${this.condition} Operating System : ${this.operatingSystem}`
-    );
-  }
-}
-
-let zeroX = new Android("Infnix", "New", "Android", "A++");
+let lamborginhi = new cars("lamboghini", "2020", "new");
+  
