@@ -143,12 +143,14 @@ class cars {
     this.model = model;
     this.condition = condition;
   }
-  showDetails() {
-    console.log(
-      `The car is ${this.brand} of brand a ${this.model} and with ${this.condition} condition`
-    );
+}
+
+class electricCars extends cars {
+  constructor(brand, model, condition, batteryLevel, adaptor) {
+    super(brand, model, condition);
+    this.batteryLevel = batteryLevel;
+    this.adaptor = adaptor;
   }
 }
 
-let lamborginhi = new cars("lamboghini", "2020", "new");
-  
+let tesela = new electricCars("Tesla", "2025", "new", "100%", "12k watt");
